@@ -1,8 +1,6 @@
 package com.sunflower.collection;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 public class ArrayLIstTest {
     public static void main(String[] args) {
@@ -19,5 +17,9 @@ public class ArrayLIstTest {
         arrayList2.add("ccc");
         arrayList1.addAll(arrayList2);
         System.out.println(arrayList1);//[123, 456, 999, 789, 555, aaa, bbb, ccc]
+        LinkedHashMap linkedHashMap = new LinkedHashMap();
+        linkedHashMap.put(1,123);
+        linkedHashMap.put(2,456);
+        System.out.println(linkedHashMap.entrySet().iterator().getClass());
     }
 }
