@@ -17,7 +17,7 @@ public class GenericTest2 {
     }
 
     public static void TestAddSuper(Collection<? super CustomGenericInterface<String,Integer>> collection){
-        collection.add(new GenericImplement());//CustomGenericInterface的实现类实例可以添加
+        collection.add(new GenericImplement());//CustomGenericInterface的实现类实例是可以添加的
         Iterator<?> iterator = collection.iterator();
         while (iterator.hasNext()){
             Object next = iterator.next();
