@@ -26,9 +26,11 @@ public class GenericTest2 {
     }
 
     public static void TestAddExtends(Collection<? extends CustomGenericInterface> collection){
-        //编译错误，无法添加
-        //collection.add(new GenericImplement());
-        //collection.add(new Object());
+        /*
+        编译错误，无法添加
+        collection.add(new GenericImplement());
+        collection.add(new Object());
+        */
 
         Iterator<? extends CustomGenericInterface> iterator = collection.iterator();
         while (iterator.hasNext()){
