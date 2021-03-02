@@ -2,7 +2,7 @@ package com.sunflower.reflection;
 
 public class Person {
     public String name;
-    private int age;
+    protected int age;
     private float wages;
     public Person(){
 

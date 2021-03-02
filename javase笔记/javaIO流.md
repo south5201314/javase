@@ -187,7 +187,7 @@
 * 序列化：用`ObjectOutputStream`类保存基本类型数据或对象的机制。
 * 反序列化：用`ObjectInputStream`类读取基本类型数据或对象的机制。
 * `ObjectOutputStream`和`ObjectInputStream`不能序列化`static`和`transient`修 饰的成员变量。
-* 对象序列化机制允许把内存中的Java对象转换成平台无关的二进制流，从 而允许把这种二进制流持久地保存在磁盘上，或通过网络将这种二进制流传 输到另一个网络节点。
+* 对象序列化机制允许把内存中的Java对象转换成平台无关的二进制流，从而允许把这种二进制流持久地保存在磁盘上，或通过网络将这种二进制流传 输到另一个网络节点。
 * 需要序列化的对象所属的类必须实现`Serializable`接口，并声明一个序列化版本标识的静态变量：`private static final long serialVersionUID`；如果类没有显式定义标识，java虚拟机会自动根据类中的结构(属性、方法等)生成。若类的实例变量做了修改，serialVersionUID 可能发生变化。
 
 #### 对象流的使用
